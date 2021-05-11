@@ -1,0 +1,4 @@
+baseURL = "https://typesarespaces.github.io/"
+languageCode = "en-us"
+title = "Jose Blog"
+theme = "soho"

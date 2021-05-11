@@ -1,0 +1,7 @@
+[submodule "jose-blog/themes/soho"]
+	path = jose-blog/themes/soho
+	url = https://github.com/alexandrevicenzi/soho.git
+[submodule "jose-blog/public"]
+	path = jose-blog/public
+	url = git@github.com:typesAreSpaces/typesAreSpaces.github.io.git
+	branch = main
