@@ -8,13 +8,13 @@
         </a>
       </div>
       {{ else }}
-        {{ with .Site.Params.profilePicture }}
-        <div class="author-image">
-          <a href="{{ $.Site.BaseURL }}">
-            <img src="{{ . | relURL }}" class="img-circle img-headshot center" alt="Profile Picture">
-          </a>
-        </div>
-        {{ end }}
+      {{ with .Site.Params.profilePicture }}
+      <div class="author-image">
+        <a href="{{ $.Site.BaseURL }}">
+          <img src="{{ . | relURL }}" class="img-circle img-headshot center" alt="Profile Picture">
+        </a>
+      </div>
+      {{ end }}
       {{ end }}
 
       <h1>{{ .Site.Title }}</h1>
@@ -24,18 +24,53 @@
       {{end}}
     </div>
 
-    <nav>
-      <ul class="sidebar-nav">
-        <li>
-          <a href="{{ .Site.BaseURL }}">Home</a>
-        </li>
-        {{ range .Site.Menus.main -}}
-        <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-        {{- end }}
-      </ul>
-    </nav>
+    <!--<h6>-->
+      <!--<br><A HREF="http://www.unm.edu/~market/cgi-bin/archives/002159.html#more">-->
+        <!--Distinguished Professor -->
+        <!--<br><A HREF="http://www.cs.unm.edu">-->
+          <!--Department of Computer Science</A><br>-->
+        <!--<A HREF="http://www.cs.unm.edu/soe">-->
+          <!--School of Engineering</A><br>-->
+        <!--<A HREF="http://www.unm.edu">-->
+          <!--University of New Mexico</A><br></h4>-->
+    <!--<br>-->
+    <!--<P>-->
+
+    <div align="center">
+      <p><span class="style2">
+        <span class="style3">
+          <span class="style6">
+            <a href="http://www.unm.edu/" class="style5">
+              University of New Mexico
+            </a>
+          </span>
+        </span>
+      </span></p>
+      <p align="center"><span class="style5">
+        <a href="http://engineering.unm.edu/">School of Engineering</a><br>
+        University of New Mexico <br>
+        Albuquerque, NM 87131, United States <br>
+        Telephone: (505) 277-3112<br>
+        Fax: (505) 277-6927</span></p>
+      <p align="center"><span class="style5">
+        <span style="font-weight: bold;">
+          Email:kapur [at] cs [dot] unm [dot] edu</span><br>
+      </span></p>
+      <p class="style3">&nbsp;</p>
+    </div>
+
+    <!--<nav>-->
+    <!--<ul class="sidebar-nav">-->
+    <!--<li>-->
+    <!--<a href="{{ .Site.BaseURL }}">Home</a>-->
+    <!--</li>-->
+    <!--{{ range .Site.Menus.main -}}-->
+    <!--<li>-->
+    <!--<a href="{{ .URL }}">{{ .Name }}</a>-->
+    <!--</li>-->
+    <!--{{- end }}-->
+    <!--</ul>-->
+    <!--</nav>-->
 
     <section class="social-icons">
       {{ range $item := .Site.Params.socialIcons }}
