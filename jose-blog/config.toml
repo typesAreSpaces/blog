@@ -1,11 +1,11 @@
 baseURL = "https://typesarespaces.github.io/"
 languageCode = "en-us"
-title = "Jose Blog"
-theme = "simplify-soho"
+title = "Prof. Deepak Kapur"
+theme = "kapur-soho"
 
 [params]
-title = "What"
-images = ["images/ExpressiveCat7.jpg"]
-profilePicture = "images/ExpressiveCat7.jpg"
+title = "Prof. Deepak Kapur"
+images = ["images/deepak-kapurn.jpg"]
+profilePicture = "images/deepak-kapurn.jpg"
 
 themeColor = "#C10037"
