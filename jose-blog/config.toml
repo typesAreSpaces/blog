@@ -9,3 +9,5 @@ images = ["images/deepak-kapurn.jpg"]
 profilePicture = "images/deepak-kapurn.jpg"
 
 themeColor = "#C10037"
+
+[menu]
