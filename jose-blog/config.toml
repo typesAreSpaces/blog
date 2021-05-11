@@ -3,5 +3,9 @@ languageCode = "en-us"
 title = "Jose Blog"
 theme = "soho"
 
+[params]
+title = "What"
 images = ["images/ExpressiveCat7.jpg"]
 profilePicture = "images/ExpressiveCat7.jpg"
+
+themeColor = "#C10037"
