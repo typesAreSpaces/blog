@@ -5,3 +5,6 @@
 	path = jose-blog/public
 	url = git@github.com:typesAreSpaces/typesAreSpaces.github.io.git
 	branch = main
+[submodule "jose-blog/themes/starter-academic"]
+	path = jose-blog/themes/starter-academic
+	url = https://github.com/wowchemy/starter-academic.git
