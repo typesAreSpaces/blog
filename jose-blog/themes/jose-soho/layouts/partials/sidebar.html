@@ -8,41 +8,57 @@
         </a>
       </div>
       {{ else }}
-        {{ with .Site.Params.profilePicture }}
-        <div class="author-image">
-          <a href="{{ $.Site.BaseURL }}">
-            <img src="{{ . | relURL }}" class="img-circle img-headshot center" alt="Profile Picture">
-          </a>
-        </div>
-        {{ end }}
+      {{ with .Site.Params.profilePicture }}
+      <div class="author-image">
+        <a href="{{ $.Site.BaseURL }}">
+          <img src="{{ . | relURL }}" class="img-circle img-headshot center" alt="Profile Picture">
+        </a>
+      </div>
+      {{ end }}
       {{ end }}
 
-      <h1>{{ .Site.Title }}</h1>
+      <h1 class="lead">{{ .Site.Title }}</h1>
 
       {{ with .Site.Params.description }}
-      <p class="lead">{{.}}</p>
+
+      <h2>{{.}}</h2>
+      <h3 class="lead">3155 Farris Enginnering Center</h3>
+      <h3 class="lead">School of Enginnering</h3>
+      <h3 class="lead">University of New Mexico</h3>
+      <p>Albuquerque, NM 87131</p>
       {{end}}
     </div>
 
-    <nav>
-      <ul class="sidebar-nav">
-        <li>
-          <a href="{{ .Site.BaseURL }}">Home</a>
-        </li>
-        {{ range .Site.Menus.main -}}
-        <li>
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-        {{- end }}
-      </ul>
-    </nav>
+    <!--<nav>-->
+      <!--<ul class="sidebar-nav">-->
+        <!--<li>-->
+          <!--<a href="{{ .Site.BaseURL }}">Home</a>-->
+        <!--</li>-->
+        <!--{{ range .Site.Menus.main -}}-->
+        <!--<li>-->
+          <!--<a href="{{ .URL }}">{{ .Name }}</a>-->
+        <!--</li>-->
+        <!--{{- end }}-->
+      <!--</ul>-->
+    <!--</nav>-->
 
     <section class="social-icons">
+
+      <a href="mailto: jose.castellanosjoo@cs.unm.edu" rel="me" title="Email" target="_blank">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </a>
+
       {{ range $item := .Site.Params.socialIcons }}
       <a href="{{ $item.url }}" rel="me" title="{{ $item.title }}" target="_blank">
         <i class="fab {{ $item.icon }}" aria-hidden="true"></i>
       </a>
       {{ end }}
+
+      <!--TODO: Fix href-->
+      <a href="cs.unm.edu/~jose.castellanosjoo/" rel="me" title="CV" target="_blank">
+        <i class="fas fa-file" aria-hidden="true"></i>
+      </a>
+
     </section>
   </div>
 </aside>
