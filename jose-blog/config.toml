@@ -1,12 +1,12 @@
 baseURL = "https://typesarespaces.github.io/"
 languageCode = "en-us"
-title = "Jose Abel Castellanos Joo - PhD Student"
+title = "Jose Abel Castellanos Joo"
 theme = "jose-soho"
 
 [params]
 author = "Jose Abel Castellanos Joo"
-title = "Jose Abel Castellanos Joo - PhD Student"
-description = "My Website"
+title = "Jose Abel Castellanos Joo"
+description = "Ph.D. student"
 images = ["images/my_face_leet_dimensions.png"]
 profilePicture = "images/my_face_leet_dimensions.png"
 
@@ -25,10 +25,15 @@ themeColor = "#C10037"
 # title = "Linkedin"
 # url = "#"
 
-# [[params.socialIcons]]
-# icon = "fa-github"
-# title = "GitHub"
-# url = "#"
+[[params.socialIcons]]
+icon = "fa-email"
+title = "Email"
+url = "https://github.com/typesAreSpaces"
+
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/typesAreSpaces"
 
 # [[params.socialIcons]]
 # icon = "fa-twitter"
