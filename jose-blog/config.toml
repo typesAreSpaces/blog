@@ -1,12 +1,12 @@
-baseURL = "https://www.cs.unm.edu/~kapur/"
+baseURL = "https://typesarespaces.github.io/"
 languageCode = "en-us"
-title = "Prof. Deepak Kapur"
-theme = "kapur-soho"
+title = "Jose Abel Castellanos Joo - PhD Student"
+theme = "jose-soho"
 
 [params]
-title = "Prof. Deepak Kapur"
-images = ["images/deepak-kapurn.jpg"]
-profilePicture = "images/deepak-kapurn.jpg"
+title = "Jose Abel Castellanos Joo - PhD Student"
+images = ["images/my_face_leet_dimensions.png"]
+profilePicture = "images/my_face_leet_dimensions.png"
 
 themeColor = "#C10037"
 
