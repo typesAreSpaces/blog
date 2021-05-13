@@ -20,39 +20,17 @@ themeColor = "#C10037"
 # customJs = ["js/blog.js"]
 
 ## Set as many as you want.
-# [[params.socialIcons]]
-# icon = "fa-linkedin"
-# title = "Linkedin"
-# url = "#"
-
 [[params.socialIcons]]
-icon = "fa-email"
-title = "Email"
-url = "https://github.com/typesAreSpaces"
+icon = "fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/joseabelcj"
 
 [[params.socialIcons]]
 icon = "fa-github"
 title = "GitHub"
 url = "https://github.com/typesAreSpaces"
 
-# [[params.socialIcons]]
-# icon = "fa-twitter"
-# title = "Twitter"
-# url = "#"
-
 [menu]
-
-[[menu.main]]
-name = "Posts"
-weight = 100
-identifier = "posts"
-url = "/posts/"
-
-[[menu.main]]
-name = "About"
-identifier = "about"
-weight = 300
-url = "/about/"
 
 [taxonomies]
 category = "categories"
