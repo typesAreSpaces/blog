@@ -1,72 +1,134 @@
 {{ define "main" -}}
-  <!--<div class="posts">-->
-    <!--{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}-->
-    <!--{{- $paginator := .Paginate $pages -}}-->
 
-    <!--{{ range $paginator.Pages }}-->
-      <!--<article class="post">-->
-        <!--<h1 class="post-title">-->
-          <!--<a href="{{ .Permalink }}">{{ .Title }}</a>-->
-        <!--</h1>-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.10/dist/katex.min.css" integrity="sha384-0cCFrwW/0bAk1Z/6IMgIyNU3kfTcNirlObr4WjrUU7+hZeD6ravdYJ3kPWSeC31M" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.10/dist/katex.min.js" integrity="sha384-dtFDxK2tSkECx/6302Z4VN2ZRqt6Gis+b1IwCjJPrn0kMYFQT9rbtyQWg5NFWAF7" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.10/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      // customised options
+      // • auto-render specific keys, e.g.:
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      // • rendering keys, e.g.:
+      throwOnError : false
+    });
+  });
+</script>
 
-        <!--<div class="post-date">-->
-          <!--<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> &middot; {{ .ReadingTime }} min read-->
-        <!--</div>-->
+<!--<div class="posts">-->
+<!--{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}-->
+<!--{{- $paginator := .Paginate $pages -}}-->
 
-        <!--<div>-->
-          <!--{{ .Summary }}-->
-        <!--</div>-->
+<!--{{ range $paginator.Pages }}-->
+<!--<article class="post">-->
+<!--<h1 class="post-title">-->
+<!--<a href="{{ .Permalink }}">{{ .Title }}</a>-->
+<!--</h1>-->
 
-        <!--<div class="read-more-link">-->
-          <!--<a href="{{ .Permalink }}">Read More</a>-->
-        <!--</div>-->
-      <!--</article>-->
-    <!--{{- end }}-->
-  <!--</div>-->
+<!--<div class="post-date">-->
+<!--<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time> &middot; {{ .ReadingTime }} min read-->
+<!--</div>-->
 
-  <h1>About</h1>
+<!--<div>-->
+<!--{{ .Summary }}-->
+<!--</div>-->
 
-  <p>
-  I'm a Ph.D. student at the <a href="https://www.unm.edu/">University of New Mexico</a> 
-  in the <a href="https://www.cs.unm.edu/">Computer Science Department</a> advised by 
-  <a href="https://www.cs.unm.edu/~kapur/">Prof. Deepak Kapur</a> working on formal methods
-  and computer algebra.  I'm interested in software verification, programming languages,
-  commutative algebra, and non-classical logics.
-  </p>
+<!--<div class="read-more-link">-->
+<!--<a href="{{ .Permalink }}">Read More</a>-->
+<!--</div>-->
+<!--</article>-->
+<!--{{- end }}-->
+<!--</div>-->
 
-  <p>
-  I obtained a bacherlor's degree in electronics engineering from 
-  <a href="https://www.udlap.mx/web/en/">Universidad de las Americas Puebla</a>
-  advised by 
-  <a href="https://sites.google.com/site/osoriomauri/">Prof. Mauricio Osorio Galindo</a>,
-  working on the paraconsistent logic C1.
-  </p>
+<h1>About</h1>
 
-  <h1>Research Interest</h1>
-  <ul>
-    <li>Sums of Squares</li>
-    <li>Archimedean quadratic modules</li>
-    <li>Groebner basis-based algorithms</li>
-    <li>Quantifier-free interpolation algorithms for decidable logics</li>
-  </ul>
+<p>
+I'm a Ph.D. student at the <a href="https://www.unm.edu/">University of New Mexico</a> 
+in the <a href="https://www.cs.unm.edu/">Computer Science Department</a> advised by 
+<a href="https://www.cs.unm.edu/~kapur/">Prof. Deepak Kapur</a> working on formal methods
+and computer algebra.  I'm interested in software verification, programming languages,
+commutative algebra, and non-classical logics.
+</p>
 
-  <h1>Publications</h1>
-  <p>TODO:</p>
+<p>
+I obtained a bacherlor's degree in electronics engineering from 
+<a href="https://www.udlap.mx/web/en/">Universidad de las Americas Puebla</a>
+advised by 
+<a href="https://sites.google.com/site/osoriomauri/">Prof. Mauricio Osorio Galindo</a>,
+working on the paraconsistent logic \(C_1\).
+</p>
 
-  <h1>Software</h1>
-  <p>TODO:</p>
+<h1>Research Interest</h1>
+<ul>
+  <li>Sums of Squares</li>
+  <li>Archimedean quadratic modules</li>
+  <li>Gr&oumlbner basis algorithms</li>
+  <li>Quantifier-free interpolation algorithms for decidable logics</li>
+</ul>
 
-  <h1>Talks</h1>
-  <p>TODO:</p>
+<h1>Publications</h1>
+<p>TODO:</p>
 
-  <h1>Teaching</h1>
-  <p>TODO:</p>
+<h1>Software</h1>
+<ul>
+  <li><a href="https://github.com/typesAreSpaces/AXDInterpolator">
+      AXDInterpolator</a>: implementation of a 
+    quantifier-free interpolation algorithm for the theory
+    of arrays and index theories (i.e. total order, 
+    integer difference logic, linear integer arithmetic).
+  </li>
+  <li><a href="https://github.com/typesAreSpaces/EUFInterpolator">
+      EUFInterpolator</a>: implementation of a quantifier-free interpolation
+    algorithm for the theory of equality and uninterpreted functions.
+  </li>
+  <li><a href="https://github.com/typesAreSpaces/z3-interp-plus">
+      Z3-Inter-plus Plugin</a>: fork of the 
+    <a href="https://github.com/Z3Prover/z3">Z3 SMT solver</a>
+    including additional utilities to process common symbols, 
+    context processing, and a custom rewriter to relax 
+    <code>QF_IDL</code> expressions to
+    <code>QF_TO</code> expressions.
+  </li>
+  <li><a href="https://github.com/typesAreSpaces/z3-proofs2latex">
+      z3-proofs2latex</a>: A Python script to export Z3
+    proofs to \( \LaTeX \).
+  </li>
+  <li><a href="https://github.com/typesAreSpaces/QuickTex">
+      QuickTex</a>: Tool to automatically setup \( \LaTeX \) projects.
+  </li>
+</ul>
 
-  <h1>Academic Service</h1>
-  <p>TODO:</p>
+<h1>Talks</h1>
+<p>TODO:</p>
 
-  <h1>Other Activities</h1>
-  <p>TODO:</p>
+<h1>Teaching</h1>
+<ul>
+  <li>Fall 2019: TA for 
+    <a href="https://www.cs.unm.edu/~williams/cs530f15.html">Geometric and Probabilistic Methods in Computer Science (CS 530)</a> with 
+    <a href="https://www.cs.unm.edu/~williams/">Prof. Lance Williams</a>
 
-  {{ template "_internal/pagination.html" . }}
-  {{- end }}
+  </li>
+  <li>Spring 2019: TA for 
+    <a href="https://www.cs.unm.edu/~saia/classes/561-f18/">Theory of Computation (CS 500)</a> with 
+    <a href="https://www.cs.unm.edu/~kapur/">Prof. Deepak Kapur</a>
+
+  </li>
+  <li>Fall 2018: TA for 
+    <a href="https://www.cs.unm.edu/~saia/classes/561-f18/">Algorithms and Data Structures (CS 561)</a> with 
+    <a href="https://www.cs.unm.edu/~saia/">Prof. Jared Saia</a>
+  </li>
+</ul>
+
+<h1>Academic Service</h1>
+<p>TODO:</p>
+
+<h1>Other Activities</h1>
+<p>TODO:</p>
+
+{{ template "_internal/pagination.html" . }}
+{{- end }}
