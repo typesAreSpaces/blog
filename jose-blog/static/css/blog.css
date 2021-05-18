@@ -1,0 +1,85 @@
+.entry .links a {
+  text-shadow: none;
+  text-decoration: underline;
+  padding: 2pt;
+  color: inherit;
+  font-size: 11pt;
+  color: #555;
+}
+
+.entry .links a:hover, a:hover {
+  background-color: #ddd;
+}
+
+ul {
+  padding-left: 20pt;
+}
+
+ul li {
+  list-style-type: "\27EB  ";;
+}
+
+li.entry:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+td {
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  vertical-align:top;
+}
+
+.entry td {
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  vertical-align:top;
+}
+
+td.date {
+  text-align:right;
+  white-space: nowrap;
+}
+
+.entry .authors {
+  color: #555;
+}
+
+.venue, .date {
+  font-style: italic;
+  color: gray;
+}
+
+.entry .course {
+  color: #555;
+}
+
+.entry .collection {
+  color: gray;
+}
+
+.entry .collection::before {
+  content: "In: "
+}
+
+.entry .links {
+}
+
+.title {
+  color: #63676B;
+}
+
+td, th {
+  border:none;
+  background-color: none;
+}
+
+table, th, td { 
+  border: none
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #ffffff;
+}

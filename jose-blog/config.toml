@@ -1,4 +1,4 @@
-baseURL = "https://typesarespaces.github.io/"
+baseURL = "https://www.cs.unm.edu/~jose.castellanosjoo/"
 languageCode = "en-us"
 title = "Jose Abel Castellanos Joo"
 theme = "jose-soho"
@@ -16,7 +16,7 @@ themeColor = "#C10037"
 # enableEmoji = true
 
 ## Set custom CSS and/or JS to override site defaults.
-# customCss = ["css/blog.css"]
+customCss = ["css/blog.css"]
 # customJs = ["js/blog.js"]
 
 ## Set as many as you want.
