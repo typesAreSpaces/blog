@@ -7,8 +7,8 @@ theme = "jose-soho"
 author = "Jose Abel Castellanos Joo"
 title = "Jose Abel Castellanos Joo"
 description = "Ph.D. student"
-images = ["images/my_face_leet_dimensions.png"]
-profilePicture = "images/my_face_leet_dimensions.png"
+images = ["images/my_face_squared_2.png"]
+profilePicture = "images/my_face_squared_2.png"
 
 themeColor = "#C10037"
 
